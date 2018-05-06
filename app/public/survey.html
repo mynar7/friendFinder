@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./surveyStyle.css">
+</head>
+<body>
+    <h1>Survey</h1>
+    <form>
+        <div class="question">
+            <h3>Enter Name</h3>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="question">
+            <h3>Enter Pic URL</h3>
+            <input type="text" name="pic" id="pic">
+        </div>
+        <div class="question">
+            <h3>Do you like cats?</h3>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q1" value='5'>(5)Strongly Agree</label>
+                <label class="answer"><input type="radio" name="q1" value='4'>(4)Agree</label>
+                <label class="answer"><input type="radio" name="q1" value='3'>(3)Neither Agree nor Disagree</label>
+                <label class="answer"><input type="radio" name="q1" value='2'>(2)Disagree</label>
+                <label class="answer"><input type="radio" name="q1" value='1'>(1)Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>Do you like dogs?</h3>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q2" value='5'>(5)Strongly Agree</label>
+                <label class="answer"><input type="radio" name="q2" value='4'>(4)Agree</label>
+                <label class="answer"><input type="radio" name="q2" value='3'>(3)Neither Agree nor Disagree</label>
+                <label class="answer"><input type="radio" name="q2" value='2'>(2)Disagree</label>
+                <label class="answer"><input type="radio" name="q2" value='1'>(1)Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>Do you like fish?</h3>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value='5'>(5)Strongly Agree</label>
+                <label class="answer"><input type="radio" name="q3" value='4'>(4)Agree</label>
+                <label class="answer"><input type="radio" name="q3" value='3'>(3)Neither Agree nor Disagree</label>
+                <label class="answer"><input type="radio" name="q3" value='2'>(2)Disagree</label>
+                <label class="answer"><input type="radio" name="q3" value='1'>(1)Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>Do you like birds?</h3>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q4" value='5'>(5)Strongly Agree</label>
+                <label class="answer"><input type="radio" name="q4" value='4'>(4)Agree</label>
+                <label class="answer"><input type="radio" name="q4" value='3'>(3)Neither Agree nor Disagree</label>
+                <label class="answer"><input type="radio" name="q4" value='2'>(2)Disagree</label>
+                <label class="answer"><input type="radio" name="q4" value='1'>(1)Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>Do you like unicorns?</h3>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q5" value='5'>(5)Strongly Agree</label>
+                <label class="answer"><input type="radio" name="q5" value='4'>(4)Agree</label>
+                <label class="answer"><input type="radio" name="q5" value='3'>(3)Neither Agree nor Disagree</label>
+                <label class="answer"><input type="radio" name="q5" value='2'>(2)Disagree</label>
+                <label class="answer"><input type="radio" name="q5" value='1'>(1)Strongly Disagree</label>
+            </div>
+        </div>
+        <button type="submit">Submit</button>  
+    </form>
+
+    <div id="modal" class="modal">
+        <div class="modal-content"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./surveyScript.js"></script>
+</body>
+</html>

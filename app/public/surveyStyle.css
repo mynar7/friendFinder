@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+}
+form {
+    max-width: 800px;
+    margin: auto;
+}
+div.question>input[type=text] {
+    width: 100%;
+    max-width: 700px;
+}
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+}
+.answer {
+    display: inline-block;
+}
+.friendPic {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width: 710px){
+    .answers {
+        flex-direction: column;
+    }
+}
+
+/* modal style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: lightgray;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    max-width: 400px;
+    text-align: center;
+}
+.close {
+    color: black;
+    float: right;
+    font-size: 38px;
+    font-weight: bolder;
+}
+.close:hover, .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
