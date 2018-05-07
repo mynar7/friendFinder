@@ -1,10 +1,15 @@
-let friends = require('./../data/friends.js');
-//console.log(friends);
+const firstFriends = require('./../data/friends.js');
+let friends = firstFriends.slice();
 module.exports = function(app) {
     app.get('/api/friends', function(req, res) {
         res.json(friends);
     });
     
+    app.get('/api/clear', function(req, res) {
+        friends = firstFriends.slice();
+        res.json(friends);
+    });
+
     app.post('/api/friends', function(req, res) {
         let newFriend = req.body;
         //console.log(newFriend);
